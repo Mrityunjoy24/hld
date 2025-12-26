@@ -1,9 +1,103 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
   <diagram name="Page-1" id="_ToYyyfU5x0B0Ty8wEFU">
-    <mxGraphModel dx="1018" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1198" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-2" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Job Schedular&amp;nbsp;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Requirement&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;font size=&quot;3&quot;&gt;1.&amp;nbsp; We can submit jobs.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;2. Jobs can be one time or recurring&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;3. Jobs should run at a specified time if one time and in case of recurring it should run multiple times&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;4. Jobs result can be downloaded.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;5. We can check job status.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;6. Cancel jobs&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;7. Priority of jobs&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Non Functional&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;1. Availability: The system should be availble. You should be able to submit job&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;2. Scalability: Should handle million of execution of job.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;3. Reliability:&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Jobs should eventually execute.&lt;br&gt;4. Fault tolereance: System should recover form failure and no single ponit of failure&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font size=&quot;3&quot;&gt;5. Latency : Job submission and exectuion should be minimal.&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="480" width="610" x="10" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-12" edge="1" parent="1" source="SLdDHBOQmKSGQQhf-nkD-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLdDHBOQmKSGQQhf-nkD-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Api gateway" vertex="1">
+          <mxGeometry height="310" width="90" x="930" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Architecture Design&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="130" x="890" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-8" edge="1" parent="1" source="SLdDHBOQmKSGQQhf-nkD-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLdDHBOQmKSGQQhf-nkD-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="client" vertex="1">
+          <mxGeometry height="110" width="110" x="730" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-13" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Dynamodb&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="120" x="1370" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-15" edge="1" parent="1" source="SLdDHBOQmKSGQQhf-nkD-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="SLdDHBOQmKSGQQhf-nkD-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Jobs Table&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp; JobId:&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;type:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;first_run_at&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;next_run_at&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;status&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;Jobs_Execution :&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Execution_id&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;job_id&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;scheduled_time&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;started_at&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;completed_at&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;attempts&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;error_message&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;status&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="215" width="210" x="1520" y="252.5" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="1110" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Job Submission Service" vertex="1">
+          <mxGeometry height="60" width="120" x="1100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-19" edge="1" parent="1" source="SLdDHBOQmKSGQQhf-nkD-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1440" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="70" width="160" x="1360" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-22" edge="1" parent="1" source="SLdDHBOQmKSGQQhf-nkD-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SLdDHBOQmKSGQQhf-nkD-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-39" edge="1" parent="1" source="SLdDHBOQmKSGQQhf-nkD-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLdDHBOQmKSGQQhf-nkD-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Job Scedular" vertex="1">
+          <mxGeometry height="70" width="180" x="1330" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Kafka" vertex="1">
+          <mxGeometry height="60" width="320" x="1260" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Execution_id" vertex="1">
+          <mxGeometry height="30" width="60" x="1430" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-25" edge="1" parent="1" source="SLdDHBOQmKSGQQhf-nkD-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SLdDHBOQmKSGQQhf-nkD-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1220" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="90" width="170" x="890" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Job Executors" vertex="1">
+          <mxGeometry height="80" width="170" x="870" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-28" edge="1" parent="1" source="SLdDHBOQmKSGQQhf-nkD-26" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=112.5;entryPerimeter=0;" target="SLdDHBOQmKSGQQhf-nkD-13" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1330" y="660" as="sourcePoint" />
+            <mxPoint x="1380" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-34" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="S3&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="150" x="890" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-35" edge="1" parent="1" source="SLdDHBOQmKSGQQhf-nkD-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.417;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" target="SLdDHBOQmKSGQQhf-nkD-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;store the Results&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="970" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Scan the dynamodb to fetch the next jobs where are to be run" vertex="1">
+          <mxGeometry height="65" width="150" x="1480" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-38" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Redis" vertex="1">
+          <mxGeometry height="110" width="130" x="1640" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Text" vertex="1">
+          <mxGeometry height="30" width="60" x="1220" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="SLdDHBOQmKSGQQhf-nkD-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Failure Scenarios&lt;br&gt;1. If&amp;nbsp; we create a job but the schedular already scheduled for next time this new job wont be picked&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;2. If there is some error in the proceesing of job we push it to retry queue&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;3. If we the workers executing the job fails then either dont increase the offset of kafka or the schedular schedules them again.&lt;br&gt;4.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="1060" x="1270" y="950" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
