@@ -349,7 +349,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="3gRIJuh5Le2ODNyZIflX-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Web crawler&lt;/h1&gt;&lt;p&gt;&lt;b&gt;FR&lt;/b&gt;&lt;/p&gt;&lt;p&gt;1. Should have some seed url and it should crawl the web from it.&lt;/p&gt;&lt;p&gt;2. Extract the html and store it.&lt;/p&gt;&lt;p&gt;3. Parse the html and find the url present in the page and collect those url for further crawling.&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;NFR&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Should crawl 10 Billion pages in 10 days&lt;br&gt;2. Efficient crawl&lt;br&gt;3. Politeness&lt;br&gt;4. Fault tolerance&lt;br&gt;&lt;br&gt;&lt;br&gt;Core Entity&lt;br&gt;1. Text Data&lt;br&gt;2. Url data&lt;br&gt;3. Domain data&lt;/span&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="450" width="360" x="121" y="130" as="geometry" />
+          <mxGeometry height="450" width="360" x="100" y="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
