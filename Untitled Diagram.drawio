@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9" pages="5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9" pages="6">
   <diagram name="JobSchedular" id="_ToYyyfU5x0B0Ty8wEFU">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -355,13 +355,143 @@
     </mxGraphModel>
   </diagram>
   <diagram id="8k6XovYEf2hSqVjO03Gp" name="Uber">
-    <mxGraphModel dx="881" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1259" dy="873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="hYD4kwpyHkv21KdUr4Sz-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Uber&lt;/h1&gt;&lt;p&gt;&lt;b&gt;FR&lt;/b&gt;&lt;/p&gt;&lt;p&gt;1. User can see nearest 10 driver once opens the app.&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. User can add src and destination and get an estimate of fare.&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. User can book a ride.&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;4. Drivers should be able to accept/reject rides&lt;br&gt;5. Driver can start and end rides.&lt;br&gt;6. Live location of driver after accepting&lt;br&gt;&lt;br&gt;&lt;b&gt;NFR&lt;br&gt;&lt;br&gt;1. &lt;/b&gt;Scalablility&lt;b&gt;: &lt;/b&gt;High&lt;b&gt;&amp;nbsp;&lt;/b&gt;Scalability during 100k of requests per second&lt;br&gt;2. Low latency of matching&lt;br&gt;3. Consistency in matching&lt;br&gt;4. Highly available outside matching&lt;br&gt;5. Fault tolerance&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Core Entity&lt;br&gt;&lt;br&gt;1. Drivers&lt;br&gt;2. Riders&lt;br&gt;3. Ride&lt;br&gt;4. Fare&lt;br&gt;5. Location&lt;/p&gt;" vertex="1">
-          <mxGeometry height="700" width="370" x="70" y="130" as="geometry" />
+          <mxGeometry height="470" width="370" x="70" y="130" as="geometry" />
         </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-4" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hYD4kwpyHkv21KdUr4Sz-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Rider" vertex="1">
+          <mxGeometry height="80" width="120" x="590" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-6" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hYD4kwpyHkv21KdUr4Sz-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-8" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hYD4kwpyHkv21KdUr4Sz-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-10" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hYD4kwpyHkv21KdUr4Sz-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-3" parent="1" style="whiteSpace=wrap;html=1;" value="Api gateway" vertex="1">
+          <mxGeometry height="400" width="120" x="790" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-5" parent="1" style="whiteSpace=wrap;html=1;" value="Fare Service" vertex="1">
+          <mxGeometry height="60" width="120" x="1100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-12" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hYD4kwpyHkv21KdUr4Sz-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-7" parent="1" style="whiteSpace=wrap;html=1;" value="Booking service" vertex="1">
+          <mxGeometry height="60" width="120" x="1100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-20" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hYD4kwpyHkv21KdUr4Sz-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-9" parent="1" style="whiteSpace=wrap;html=1;" value="Location Service" vertex="1">
+          <mxGeometry height="60" width="120" x="1100" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-16" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hYD4kwpyHkv21KdUr4Sz-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-11" parent="1" style="whiteSpace=wrap;html=1;" value="Kafka" vertex="1">
+          <mxGeometry height="60" width="330" x="1300" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-13" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Fare DB" vertex="1">
+          <mxGeometry height="130" width="130" x="1400" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-14" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="hYD4kwpyHkv21KdUr4Sz-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-18" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hYD4kwpyHkv21KdUr4Sz-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-30" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="hYD4kwpyHkv21KdUr4Sz-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-15" parent="1" style="whiteSpace=wrap;html=1;" value="Booking Consumer" vertex="1">
+          <mxGeometry height="60" width="120" x="1730" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-17" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Booking DB" vertex="1">
+          <mxGeometry height="130" width="110" x="1990" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Redis" vertex="1">
+          <mxGeometry height="150" width="150" x="1320" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-22" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hYD4kwpyHkv21KdUr4Sz-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Driver" vertex="1">
+          <mxGeometry height="80" width="120" x="590" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-24" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-15" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="hYD4kwpyHkv21KdUr4Sz-19" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1600" y="360" as="sourcePoint" />
+            <mxPoint x="1650" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-25" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Location DB" vertex="1">
+          <mxGeometry height="110" width="109" x="1280" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Kafka" vertex="1">
+          <mxGeometry height="60" width="190" x="1140" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-27" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.43;entryY=0.035;entryDx=0;entryDy=0;entryPerimeter=0;" target="hYD4kwpyHkv21KdUr4Sz-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-28" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=75;entryPerimeter=0;" target="hYD4kwpyHkv21KdUr4Sz-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-29" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Redis&amp;nbsp;" vertex="1">
+          <mxGeometry height="120" width="120" x="1730" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Deep Dives&lt;br&gt;1. Only send a single ride request to a driver at one time.&lt;br&gt;2. We can make an entry in redis with some ttl if user accespts the ride in that time fine else it will get deleted marking user as free&amp;nbsp;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="620" x="1220" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-32" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hYD4kwpyHkv21KdUr4Sz-33" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="910" y="360" as="sourcePoint" />
+            <mxPoint x="1090" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-35" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1300" y="69.99999999999989" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User SVC" vertex="1">
+          <mxGeometry height="60" width="120" x="1090" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-39" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hYD4kwpyHkv21KdUr4Sz-38" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-34" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="User DB" vertex="1">
+          <mxGeometry height="80" width="60" x="1304.5" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-37" edge="1" parent="1" source="hYD4kwpyHkv21KdUr4Sz-15" style="endArrow=classic;html=1;rounded=0;entryX=0.979;entryY=0.641;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="hYD4kwpyHkv21KdUr4Sz-38" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1640" y="150" />
+            </Array>
+            <mxPoint x="1780" y="330" as="sourcePoint" />
+            <mxPoint x="1370" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hYD4kwpyHkv21KdUr4Sz-38" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Redis" vertex="1">
+          <mxGeometry height="80" width="80" x="1434.5" y="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Pz_AfPRuPY-DMIJScG8O" name="Page-6">
+    <mxGraphModel dx="881" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
