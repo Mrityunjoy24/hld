@@ -261,6 +261,9 @@
         <mxCell id="Q0HEUE5PoKdTyBh6viSr-5" parent="1" style="whiteSpace=wrap;html=1;" value="Ingestion Svc" vertex="1">
           <mxGeometry height="60" width="120" x="1290" y="480" as="geometry" />
         </mxCell>
+        <mxCell id="Q0HEUE5PoKdTyBh6viSr-44" edge="1" parent="1" source="Q0HEUE5PoKdTyBh6viSr-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Q0HEUE5PoKdTyBh6viSr-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Q0HEUE5PoKdTyBh6viSr-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Core Entities&lt;div&gt;1. Service&lt;/div&gt;&lt;div&gt;2. Log&lt;/div&gt;&lt;div&gt;3.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="100" x="80" y="710" as="geometry" />
         </mxCell>
