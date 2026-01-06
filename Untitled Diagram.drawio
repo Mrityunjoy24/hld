@@ -236,11 +236,11 @@
     </mxGraphModel>
   </diagram>
   <diagram id="wlloCA3cmls4olU10xto" name="Logging">
-    <mxGraphModel dx="1762" dy="1222" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1958" dy="1358" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Q0HEUE5PoKdTyBh6viSr-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Logging System&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Requirements&lt;/b&gt;&lt;br&gt;1. System should be able to injest data from multiple sources&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;2. It should be able to parse, process and store in structured format.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;3. View the logs in near real time.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;4. Injest Batch jobs or realtime jobs.&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;5.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font size=&quot;3&quot;&gt;Non Functional Requirements&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;1. Scalability: System should be able to Scale to handle high load&lt;br&gt;2. Durability: We should be able to store logs without data loss&lt;br&gt;3. Latency: Near realtime logs 5s&amp;nbsp;&lt;br&gt;4. Availability: High availability &amp;gt;&amp;gt; Consistency&lt;br&gt;5. Fault tolerance : System should work if something fails&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+        <mxCell id="Q0HEUE5PoKdTyBh6viSr-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Logging System&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Requirements&lt;/b&gt;&lt;br&gt;1. System should be able to injest data from multiple sources&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;2. It should be able to parse, process and store in structured format.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;3. View the logs in near real time.&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;4. Injest Batch jobs or realtime jobs.&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;5. Alerts&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font size=&quot;3&quot;&gt;Non Functional Requirements&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;1. Scalability: System should be able to Scale to handle high load&lt;br&gt;2. Durability: We should be able to store logs without data loss&lt;br&gt;3. Latency: Near realtime logs 5s&amp;nbsp;&lt;br&gt;4. Availability: High availability &amp;gt;&amp;gt; Consistency&lt;br&gt;5. Fault tolerance : System should work if something fails&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="380" width="550" x="70" y="300" as="geometry" />
         </mxCell>
         <mxCell id="Q0HEUE5PoKdTyBh6viSr-4" edge="1" parent="1" source="Q0HEUE5PoKdTyBh6viSr-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Q0HEUE5PoKdTyBh6viSr-3" value="">
@@ -312,8 +312,33 @@
         <mxCell id="Q0HEUE5PoKdTyBh6viSr-38" edge="1" parent="1" source="Q0HEUE5PoKdTyBh6viSr-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.027;entryY=0.608;entryDx=0;entryDy=0;entryPerimeter=0;" target="Q0HEUE5PoKdTyBh6viSr-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q0HEUE5PoKdTyBh6viSr-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;DeepDives&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;1.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="150" width="400" x="1160" y="960" as="geometry" />
+        <mxCell id="Q0HEUE5PoKdTyBh6viSr-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;DeepDives&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;1. Store Hot Data last month in Elastic search and then delete from it.&lt;br&gt;2. Store in s3 for long term.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;3.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="610" x="1070" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="hIWIOdOqERmVwW91YGsM-1" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;ALerts DB&lt;/font&gt;" vertex="1">
+          <mxGeometry height="150" width="130" x="1380" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="hIWIOdOqERmVwW91YGsM-2" edge="1" parent="1" source="Q0HEUE5PoKdTyBh6viSr-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.4;entryY=0.044;entryDx=0;entryDy=0;entryPerimeter=0;" target="hIWIOdOqERmVwW91YGsM-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hIWIOdOqERmVwW91YGsM-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Notification&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="220" x="1940" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="hIWIOdOqERmVwW91YGsM-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Kafka&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="250" x="1660" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="hIWIOdOqERmVwW91YGsM-7" edge="1" parent="1" source="hIWIOdOqERmVwW91YGsM-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.397;entryY=0.016;entryDx=0;entryDy=0;entryPerimeter=0;" target="hIWIOdOqERmVwW91YGsM-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hIWIOdOqERmVwW91YGsM-10" edge="1" parent="1" source="Q0HEUE5PoKdTyBh6viSr-36" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="hIWIOdOqERmVwW91YGsM-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1550" y="980" />
+              <mxPoint x="1500" y="930" />
+            </Array>
+            <mxPoint x="1500" y="980" as="sourcePoint" />
+            <mxPoint x="1550" y="930" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
