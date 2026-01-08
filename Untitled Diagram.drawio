@@ -804,10 +804,72 @@
     </mxGraphModel>
   </diagram>
   <diagram id="tufRUdHGKJEJaigdTflq" name="Top K">
-    <mxGraphModel dx="881" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1355" dy="948" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="1740" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Top K&amp;nbsp;&lt;/h1&gt;&lt;h4 data-start=&quot;2099&quot; data-end=&quot;2127&quot;&gt;Functional Requirements&lt;/h4&gt;&lt;ol data-start=&quot;2128&quot; data-end=&quot;2382&quot;&gt;&lt;li data-start=&quot;2128&quot; data-end=&quot;2194&quot;&gt;&lt;p data-start=&quot;2131&quot; data-end=&quot;2194&quot;&gt;Users should be able to view the &lt;strong data-start=&quot;2164&quot; data-end=&quot;2192&quot;&gt;Top-K videos of all time&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;2195&quot; data-end=&quot;2298&quot;&gt;&lt;p data-start=&quot;2198&quot; data-end=&quot;2244&quot;&gt;The system should support &lt;strong data-start=&quot;2224&quot; data-end=&quot;2243&quot;&gt;sliding windows;&lt;/strong&gt;&lt;/p&gt;&lt;ul data-start=&quot;2248&quot; data-end=&quot;2298&quot;&gt;&lt;li data-start=&quot;2248&quot; data-end=&quot;2263&quot;&gt;&lt;p data-start=&quot;2250&quot; data-end=&quot;2263&quot;&gt;Last 1 minute&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;2267&quot; data-end=&quot;2280&quot;&gt;&lt;p data-start=&quot;2269&quot; data-end=&quot;2280&quot;&gt;Last 1 hour&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;2284&quot; data-end=&quot;2298&quot;&gt;&lt;p data-start=&quot;2286&quot; data-end=&quot;2298&quot;&gt;Last 1 day&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li data-start=&quot;2299&quot; data-end=&quot;2382&quot;&gt;&lt;p data-start=&quot;2302&quot; data-end=&quot;2382&quot;&gt;Leaderboards should be &lt;strong data-start=&quot;2325&quot; data-end=&quot;2354&quot;&gt;updated in near real-time&lt;/strong&gt; (e.g., every 30–60 seconds)&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h4 data-start=&quot;2389&quot; data-end=&quot;2421&quot;&gt;Non-Functional Requirements&lt;/h4&gt;&lt;ol data-start=&quot;2422&quot; data-end=&quot;2732&quot;&gt;&lt;li data-start=&quot;2422&quot; data-end=&quot;2497&quot;&gt;&lt;p data-start=&quot;2425&quot; data-end=&quot;2497&quot;&gt;The system should scale to &lt;span data-start=&quot;2452&quot; data-end=&quot;2495&quot; style=&quot;&quot;&gt;~1M video interaction events per second&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;2498&quot; data-end=&quot;2554&quot;&gt;&lt;p data-start=&quot;2501&quot; data-end=&quot;2554&quot;&gt;Leaderboard queries should have &lt;span data-start=&quot;2533&quot; data-end=&quot;2552&quot;&gt;&amp;lt; 200ms latency&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;2555&quot; data-end=&quot;2631&quot;&gt;&lt;p data-start=&quot;2558&quot; data-end=&quot;2631&quot;&gt;Rankings must be &lt;span data-start=&quot;2575&quot; data-end=&quot;2587&quot;&gt;accurate&lt;/span&gt; (no approximate/probabilistic algorithms)&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;2632&quot; data-end=&quot;2732&quot;&gt;&lt;p data-start=&quot;2635&quot; data-end=&quot;2732&quot;&gt;The system must be &lt;span data-start=&quot;2654&quot; data-end=&quot;2674&quot; style=&quot;&quot;&gt;highly available&lt;/span&gt; and continue serving stale data during partial failures&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="530" width="390" x="110" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Kafka" vertex="1">
+          <mxGeometry height="60" width="280" x="1920" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-8" edge="1" parent="1" source="VwZ4EkkbOSR35vnmEYp1-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VwZ4EkkbOSR35vnmEYp1-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Client" vertex="1">
+          <mxGeometry height="80" width="120" x="950" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-10" edge="1" parent="1" source="VwZ4EkkbOSR35vnmEYp1-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VwZ4EkkbOSR35vnmEYp1-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="APi Gateway" vertex="1">
+          <mxGeometry height="360" width="120" x="1200" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-23" edge="1" parent="1" source="VwZ4EkkbOSR35vnmEYp1-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="VwZ4EkkbOSR35vnmEYp1-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-9" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Leaderboard service" vertex="1">
+          <mxGeometry height="60" width="120" x="1400" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-12" edge="1" parent="1" source="VwZ4EkkbOSR35vnmEYp1-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VwZ4EkkbOSR35vnmEYp1-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-16" edge="1" parent="1" source="VwZ4EkkbOSR35vnmEYp1-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VwZ4EkkbOSR35vnmEYp1-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-17" connectable="0" parent="VwZ4EkkbOSR35vnmEYp1-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Checkpointing" vertex="1">
+          <mxGeometry relative="1" x="-0.144" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-21" edge="1" parent="1" source="VwZ4EkkbOSR35vnmEYp1-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VwZ4EkkbOSR35vnmEYp1-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Flink" vertex="1">
+          <mxGeometry height="60" width="120" x="1730" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Redis&lt;br&gt;Sorted Sets" vertex="1">
+          <mxGeometry height="80" width="80" x="1600" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-14" edge="1" parent="1" source="VwZ4EkkbOSR35vnmEYp1-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.761;entryY=0.983;entryDx=0;entryDy=0;entryPerimeter=0;" target="VwZ4EkkbOSR35vnmEYp1-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="S3" vertex="1">
+          <mxGeometry height="80" width="120" x="1730" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-20" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Dynamodb" vertex="1">
+          <mxGeometry height="110" width="90" x="1560" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-25" edge="1" parent="1" source="VwZ4EkkbOSR35vnmEYp1-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.077;entryY=0.06;entryDx=0;entryDy=0;entryPerimeter=0;" target="VwZ4EkkbOSR35vnmEYp1-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VwZ4EkkbOSR35vnmEYp1-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Deep Dives&lt;br&gt;1. Flink will calculate the top k per shard and store in redis&lt;br&gt;2. Redis will maintin the top K in Sorted Sets&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;&quot; size=&quot;3&quot;&gt;3. If redis goes down we can calculte it from DB.&lt;br&gt;4. We are checkpoointing for Flink if flink goes down it can pick up from where it left.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;5.&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;If Kafka slows down, Flink naturally backpressures. Leaderboard updates may lag, but no events are lost.&lt;br&gt;6. Hot Key we will divide the events into multiple partitions. flink can later aggragete and then maintian the sliding window&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;7. we need redis replica to handle the load&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;8. use&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font size=&quot;3&quot;&gt;RENAME to handle simultanoeus read and writes in redis or maintain versions&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="550" x="1450" y="800" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
