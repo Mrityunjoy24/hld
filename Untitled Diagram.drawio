@@ -344,12 +344,178 @@
     </mxGraphModel>
   </diagram>
   <diagram id="k5qdmLQm2Xb7yK3ysXdZ" name="Web Crawler">
-    <mxGraphModel dx="1355" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1958" dy="1369" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="2580" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="80" width="170" x="1850" y="390" as="geometry" />
+        </mxCell>
         <mxCell id="3gRIJuh5Le2ODNyZIflX-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Web crawler&lt;/h1&gt;&lt;p&gt;&lt;b&gt;FR&lt;/b&gt;&lt;/p&gt;&lt;p&gt;1. Should have some seed url and it should crawl the web from it.&lt;/p&gt;&lt;p&gt;2. Extract the html and store it.&lt;/p&gt;&lt;p&gt;3. Parse the html and find the url present in the page and collect those url for further crawling.&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;NFR&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Should crawl 10 Billion pages in 10 days&lt;br&gt;2. Efficient crawl&lt;br&gt;3. Politeness&lt;br&gt;4. Fault tolerance&lt;br&gt;&lt;br&gt;&lt;br&gt;Core Entity&lt;br&gt;1. Text Data&lt;br&gt;2. Url data&lt;br&gt;3. Domain data&lt;/span&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="380" width="360" x="100" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-11" edge="1" parent="1" source="T8vJwXz3WjrJh8kI5gCK-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="T8vJwXz3WjrJh8kI5gCK-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="SQS" vertex="1">
+          <mxGeometry height="60" width="330" x="1330" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-9" edge="1" parent="1" source="T8vJwXz3WjrJh8kI5gCK-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="T8vJwXz3WjrJh8kI5gCK-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Seed Service&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="150" x="1000" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-3" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="DB" vertex="1">
+          <mxGeometry height="140" width="100" x="1150" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-7" edge="1" parent="1" source="T8vJwXz3WjrJh8kI5gCK-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="T8vJwXz3WjrJh8kI5gCK-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="980" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="API Gateway" vertex="1">
+          <mxGeometry height="420" width="120" x="740" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-6" edge="1" parent="1" source="T8vJwXz3WjrJh8kI5gCK-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="T8vJwXz3WjrJh8kI5gCK-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Client" vertex="1">
+          <mxGeometry height="80" width="120" x="530" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-8" edge="1" parent="1" source="T8vJwXz3WjrJh8kI5gCK-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1150" y="340" as="sourcePoint" />
+            <mxPoint x="1200" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Wrokers" vertex="1">
+          <mxGeometry height="80" width="180" x="1830" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Website" vertex="1">
+          <mxGeometry height="80" width="120" x="1850" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-13" edge="1" parent="1" source="T8vJwXz3WjrJh8kI5gCK-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.642;entryY=1.028;entryDx=0;entryDy=0;entryPerimeter=0;" target="T8vJwXz3WjrJh8kI5gCK-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="DNS" vertex="1">
+          <mxGeometry height="60" width="120" x="1620" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-15" edge="1" parent="1" source="T8vJwXz3WjrJh8kI5gCK-10" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="T8vJwXz3WjrJh8kI5gCK-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1540" y="340" as="sourcePoint" />
+            <mxPoint x="1590" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Redis" vertex="1">
+          <mxGeometry height="80" width="80" x="2130" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-18" edge="1" parent="1" source="T8vJwXz3WjrJh8kI5gCK-10" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="T8vJwXz3WjrJh8kI5gCK-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2080" y="670" as="sourcePoint" />
+            <mxPoint x="2130" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Rate Limitter based on domain&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="60" x="2240" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-20" edge="1" parent="1" source="T8vJwXz3WjrJh8kI5gCK-10" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="T8vJwXz3WjrJh8kI5gCK-21" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2020" y="640" as="sourcePoint" />
+            <mxPoint x="2070" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-21" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;b&gt;DB&lt;/b&gt;" vertex="1">
+          <mxGeometry height="180" width="150" x="2460" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-26" edge="1" parent="1" source="T8vJwXz3WjrJh8kI5gCK-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="T8vJwXz3WjrJh8kI5gCK-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Parser&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="2590" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Kafka&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="320" x="2130" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-25" edge="1" parent="1" source="T8vJwXz3WjrJh8kI5gCK-10" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2410" y="630" as="sourcePoint" />
+            <mxPoint x="2130" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-27" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="S3" vertex="1">
+          <mxGeometry height="80" width="80" x="2485" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-28" edge="1" parent="1" source="T8vJwXz3WjrJh8kI5gCK-10" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="T8vJwXz3WjrJh8kI5gCK-27" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2410" y="630" as="sourcePoint" />
+            <mxPoint x="2460" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-29" edge="1" parent="1" style="curved=1;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="2740" y="800" />
+              <mxPoint x="2720" y="760" />
+              <mxPoint x="2810" y="410" />
+            </Array>
+            <mxPoint x="2720" y="810" as="sourcePoint" />
+            <mxPoint x="2570" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-30" edge="1" parent="1" source="T8vJwXz3WjrJh8kI5gCK-22" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="T8vJwXz3WjrJh8kI5gCK-21" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2640" y="750" as="sourcePoint" />
+            <mxPoint x="2460" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-43" connectable="0" parent="T8vJwXz3WjrJh8kI5gCK-30" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Store the new Urls" vertex="1">
+          <mxGeometry relative="1" x="0.2699" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Urls Table&lt;/b&gt;&lt;div&gt;1. Url Id&lt;/div&gt;&lt;div&gt;2. URL&lt;/div&gt;&lt;div&gt;2. last cralwed time&lt;/div&gt;&lt;div&gt;3. S3 url&lt;/div&gt;&lt;div&gt;4. Text&lt;/div&gt;&lt;div&gt;5. Dedup hash&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="120" x="2830" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Domain Table&lt;/b&gt;&lt;div&gt;!. domian Id&amp;nbsp;&lt;br&gt;2. domain name&lt;br&gt;3. crawl delay&lt;br&gt;4. last crawl time&lt;br&gt;5. robo.txt as txt&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="90" x="2840" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-36" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Redis" vertex="1">
+          <mxGeometry height="80" width="80" x="2130" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-37" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="T8vJwXz3WjrJh8kI5gCK-36" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2010" y="460" as="sourcePoint" />
+            <mxPoint x="2470" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Create index on Dedup hash to check if the html is already seen. Then see if they present donot crawl again or crawl after some delay.&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="130" x="3010" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Deepdive&lt;/b&gt;&amp;nbsp;&lt;br&gt;1. Politeness : Donot hit a url twice which is seen&amp;nbsp;&lt;br&gt;2. Donot parse a html is already seen&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;3. Set visibilty timeout if the worker fails to fetch html. after sometime another worker can rerty&lt;br&gt;3. If worker dies then also vosobilty timeout allows no one to see the meessage for time. after expiry other workers can pick the task.&amp;nbsp;&lt;br&gt;4. Redis can be use to rate limit the domain hits using some rate limitter&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;5.&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="755" x="2895" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-40" edge="1" parent="1" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.083;entryY=0.99;entryDx=0;entryDy=0;entryPerimeter=0;" target="T8vJwXz3WjrJh8kI5gCK-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="2630" y="870" />
+              <mxPoint x="2580" y="850" />
+              <mxPoint x="2160" y="1170" />
+            </Array>
+            <mxPoint x="2650" y="830" as="sourcePoint" />
+            <mxPoint x="1190" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-41" connectable="0" parent="T8vJwXz3WjrJh8kI5gCK-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Push the new urls to the queue&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.3843" y="-95" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8vJwXz3WjrJh8kI5gCK-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1.&amp;nbsp; Fetch the HTML url from s3&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;2. Extract the Text and urls&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="200" x="2650" y="270" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -488,7 +654,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Pz_AfPRuPY-DMIJScG8O" name="Page-6">
-    <mxGraphModel dx="881" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="881" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
