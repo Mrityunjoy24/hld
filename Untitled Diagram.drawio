@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.0" pages="7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.0" pages="8">
   <diagram name="JobSchedular" id="_ToYyyfU5x0B0Ty8wEFU">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -870,6 +870,14 @@
         <mxCell id="VwZ4EkkbOSR35vnmEYp1-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Deep Dives&lt;br&gt;1. Flink will calculate the top k per shard and store in redis&lt;br&gt;2. Redis will maintin the top K in Sorted Sets&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;&quot; size=&quot;3&quot;&gt;3. If redis goes down we can calculte it from DB.&lt;br&gt;4. We are checkpoointing for Flink if flink goes down it can pick up from where it left.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;5.&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;If Kafka slows down, Flink naturally backpressures. Leaderboard updates may lag, but no events are lost.&lt;br&gt;6. Hot Key we will divide the events into multiple partitions. flink can later aggragete and then maintian the sliding window&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;7. we need redis replica to handle the load&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;8. use&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font size=&quot;3&quot;&gt;RENAME to handle simultanoeus read and writes in redis or maintain versions&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="270" width="550" x="1450" y="800" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="_tnILj203wa5nzUNq4uK" name="Google Doc">
+    <mxGraphModel dx="881" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
