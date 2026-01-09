@@ -874,10 +874,86 @@
     </mxGraphModel>
   </diagram>
   <diagram id="_tnILj203wa5nzUNq4uK" name="Google Doc">
-    <mxGraphModel dx="881" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1175" dy="821" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Google Doc&lt;/h1&gt;&lt;p&gt;1. Users should be able to create new document.&lt;br&gt;2. Users should be share document to other users.&lt;br&gt;3. Multiple users can edit a document simultaneously limit of 100&lt;br&gt;4. Users can see the cursor of others&amp;nbsp;&lt;br&gt;5. System should resolve conflict in editing the doc&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;NFR&lt;br&gt;&lt;br&gt;1. &lt;/b&gt;Low latency updates while editing 100ms&lt;br&gt;2. High Availability: Service should be available even when some parts are down.&lt;br&gt;3. Scalbility : Should handle 1M concurrent users&amp;nbsp;&lt;br&gt;4. Fault tolerance : System should recover form errors&lt;br&gt;5. Store millions of documents durably&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="290" width="390" x="60" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-7" edge="1" parent="1" source="lgpXQiSPVk3qzJD6wB2X-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="lgpXQiSPVk3qzJD6wB2X-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-12" edge="1" parent="1" source="lgpXQiSPVk3qzJD6wB2X-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="lgpXQiSPVk3qzJD6wB2X-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="APi Gateway" vertex="1">
+          <mxGeometry height="310" width="80" x="690" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-5" edge="1" parent="1" source="lgpXQiSPVk3qzJD6wB2X-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="lgpXQiSPVk3qzJD6wB2X-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Client" vertex="1">
+          <mxGeometry height="80" width="80" x="500" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-15" edge="1" parent="1" source="lgpXQiSPVk3qzJD6wB2X-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="lgpXQiSPVk3qzJD6wB2X-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Document Service" vertex="1">
+          <mxGeometry height="60" width="120" x="940" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-8" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Dynamodb" vertex="1">
+          <mxGeometry height="110" width="90" x="1250" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="S3" vertex="1">
+          <mxGeometry height="100" width="100" x="1161" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-17" edge="1" parent="1" source="lgpXQiSPVk3qzJD6wB2X-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lgpXQiSPVk3qzJD6wB2X-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Websocket Service" vertex="1">
+          <mxGeometry height="60" width="120" x="940" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-13" edge="1" parent="1" source="lgpXQiSPVk3qzJD6wB2X-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;" target="lgpXQiSPVk3qzJD6wB2X-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-14" edge="1" parent="1" source="lgpXQiSPVk3qzJD6wB2X-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;" target="lgpXQiSPVk3qzJD6wB2X-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Kafka" vertex="1">
+          <mxGeometry height="60" width="350" x="911" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-20" edge="1" parent="1" source="lgpXQiSPVk3qzJD6wB2X-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="lgpXQiSPVk3qzJD6wB2X-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Compaction Consumer" vertex="1">
+          <mxGeometry height="60" width="120" x="1320" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-22" edge="1" parent="1" source="lgpXQiSPVk3qzJD6wB2X-19" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1500" y="530" />
+              <mxPoint x="1450" y="480" />
+              <mxPoint x="1540" y="220" />
+            </Array>
+            <mxPoint x="1450" y="530" as="sourcePoint" />
+            <mxPoint x="1270" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-23" connectable="0" parent="lgpXQiSPVk3qzJD6wB2X-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Compact and store the new version of the file in s3&amp;nbsp;" vertex="1">
+          <mxGeometry relative="1" x="-0.0027" y="45" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-24" edge="1" parent="1" source="lgpXQiSPVk3qzJD6wB2X-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.687;entryY=0.992;entryDx=0;entryDy=0;entryPerimeter=0;" target="lgpXQiSPVk3qzJD6wB2X-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="Update the latest version in db" vertex="1">
+          <mxGeometry height="30" width="190" x="1245" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="lgpXQiSPVk3qzJD6wB2X-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Deep Dives&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;1. OT we have to run at wesocket service and then return the transformed operation to other clients&lt;br&gt;2. Clients should also run the OT at thier side.&lt;br&gt;3 When there are no active users editing the document we can run some comapction creating the new version of the file.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;3. Discuss approach like sending the whole file every time&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;4. We need some ordering of the events which is doen by the server not clients&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="519" x="1751" y="480" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
