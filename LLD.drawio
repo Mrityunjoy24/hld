@@ -1,6 +1,17 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.5.2">
-  <diagram name="Page-1" id="tDHYvwfFFPtha3G4zkrB">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.5.2" pages="2">
+  <diagram name="Spotify" id="tDHYvwfFFPtha3G4zkrB">
+    <mxGraphModel dx="1018" dy="694" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zduTtMG5wm6LtlvpudR_-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Spotify&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Requirements&lt;/b&gt;&lt;div&gt;1. Users casearch for songs&lt;/div&gt;&lt;div&gt;2. Users can play songs&lt;/div&gt;&lt;div&gt;3. use can see details of songs.&lt;/div&gt;&lt;div&gt;4. songs can album or single&lt;/div&gt;&lt;div&gt;5. Users can create playlists&lt;/div&gt;&lt;div&gt;6. Songs will have singers details&amp;nbsp;&lt;/div&gt;&lt;div&gt;7. Songs can have lyrics&lt;/div&gt;&lt;div&gt;8. There can a songs queue. Users can add songs to it.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="340" width="420" x="60" y="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="esFJnhq24ad4sSyzNB98" name="Page-2">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
